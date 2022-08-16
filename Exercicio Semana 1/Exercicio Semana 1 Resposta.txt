@@ -1,0 +1,1 @@
+A computação visual é a area da tecnologia que trata da visualização, tratamento e manipulação de imagens atravez de programação com intuito de estudo, criação de reconhecedores, jogos, novas tenologias e etc, mas que tenham como foco a visualização de imagens.
