@@ -4,6 +4,6 @@
 
 ### *Reposta:*    
 
-### Computação grafica: 
+## Computação grafica: 
 
 Referencia: https://repositorio.unesp.br/bitstream/handle/11449/203628/000916249.pdf?sequence=1
