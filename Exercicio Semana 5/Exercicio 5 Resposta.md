@@ -2,12 +2,12 @@
 
 ## *Exercicio:* Faça uma pesquisa sobre como é possível:
 
-## 1. Realizar a limiarização de uma imagem usando Python e scikit-image.
-## 2. Plotar o histograma de uma imagem tons de cinza usando Python, scikit-image e matplotlib.
-## 3. Plotar o histograma de uma imagem colorida (um histograma por canal de cor) usando Python, scikit-image e matplotlib.
-## 4. Equalizar o histograma de uma imagem usando Python e scikit-image.
-## 5. Detectar (concluir) que uma foto está subexposta ou que está superexposta, analisando o histograma.
-## 6. Detectar (concluir) se uma imagem está com baixo contraste ou alto contraste, analisando o histograma.
+### 1. Realizar a limiarização de uma imagem usando Python e scikit-image.
+### 2. Plotar o histograma de uma imagem tons de cinza usando Python, scikit-image e matplotlib.
+### 3. Plotar o histograma de uma imagem colorida (um histograma por canal de cor) usando Python, scikit-image e matplotlib.
+### 4. Equalizar o histograma de uma imagem usando Python e scikit-image.
+### 5. Detectar (concluir) que uma foto está subexposta ou que está superexposta, analisando o histograma.
+### 6. Detectar (concluir) se uma imagem está com baixo contraste ou alto contraste, analisando o histograma.
 
 ## Descreva o problema, a solução do problema e como o uso do filtro de suavização ajudou na solução. Procure incluir imagens que mostram o processo durante a solução do problema.
 
