@@ -39,7 +39,7 @@
 #### ax[2].axis('off')
 #### plt.show()
 
-### Imagem resultante da execução do codigo
+### Imagem resultante da execução do codigo:
 
 ![https://i.imgur.com/QTopsHj.png](https://i.imgur.com/9CTXamF.png)
 
@@ -48,7 +48,24 @@
 
 ### Codigo em python: 
 
-#### 
+#### import numpy as np
+#### import skimage.color
+#### import skimage.io
+#### import matplotlib.pyplot as plt
+#### %matplotlib widget
+#### image = skimage.io.imread(fname="data/plant-seedling.jpg", as_gray=True)
+#### fig, ax = plt.subplots()
+#### plt.imshow(image, cmap="gray")
+#### histogram, bin_edges = np.histogram(image, bins=256, range=(0, 1))
+#### plt.figure()
+#### plt.title("Grayscale Histogram")
+#### plt.xlabel("grayscale value")
+#### plt.ylabel("pixel count")
+#### plt.xlim([0.0, 1.0])
+#### plt.plot(bin_edges[0:-1], histogram)
 
+### Imagem resultante da execução do codigo:
+
+![https://i.imgur.com/kKlpsD2.png](https://i.imgur.com/kKlpsD2.png)
 
 
