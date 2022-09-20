@@ -12,7 +12,7 @@
 
 ## *Repostas:*  
 
-## 1: 
+## 1. 
 
 ### Codigo em python: 
 
@@ -39,8 +39,14 @@
 #### ax[2].axis('off')
 #### plt.show()
 
+###Imagem resultante da execução do codigo
+![[https://i.imgur.com/QTopsHj.png](https://i.imgur.com/9CTXamF.png)]
+
+## 2. 
+
+### Codigo em python: 
+
+#### 
 
 
-
-![https://i.imgur.com/QTopsHj.png](https://i.imgur.com/QTopsHj.png)
 
