@@ -16,9 +16,9 @@
 
 ### Codigo em python: 
 
-### import matplotlib.pyplot as plt
-### from skimage import data
-### from skimage.filters import threshold_otsu
+#### import matplotlib.pyplot as plt
+#### from skimage import data
+#### from skimage.filters import threshold_otsu
 
 ### image = data.camera()
 ### thresh = threshold_otsu(image)
