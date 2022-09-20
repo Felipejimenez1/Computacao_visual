@@ -41,7 +41,8 @@
 
 ### Imagem resultante da execução do codigo
 
-![[https://i.imgur.com/QTopsHj.png](https://i.imgur.com/9CTXamF.png)]
+![https://i.imgur.com/QTopsHj.png](https://i.imgur.com/9CTXamF.png)
+
 
 ## 2. 
 
