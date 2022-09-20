@@ -9,15 +9,43 @@
 ### 5. Detectar (concluir) que uma foto está subexposta ou que está superexposta, analisando o histograma.
 ### 6. Detectar (concluir) se uma imagem está com baixo contraste ou alto contraste, analisando o histograma.
 
-## Descreva o problema, a solução do problema e como o uso do filtro de suavização ajudou na solução. Procure incluir imagens que mostram o processo durante a solução do problema.
 
-## *Reposta:*  
+## *Repostas:*  
 
-### Artigo de referencia: https://cchen156.github.io/paper/18CVPR_SID.pdf
+## 1: 
 
-### O artigo selecionado busca criar um software capaz de melhorar a performance de cameras em ambientes com pouca ou nenhuma luminosidade. O problema indentificado é que para conseguir ter boas fotos com pouca luz o aparelho pode aumentar a quantidade de luz que recebe no sensor, aumentando a visibilidade, mas tambem adicionando ruido e alterando o balanço de cores da foto. A solução para o problema foi a criação de uma inteligencia artificial que recebe diversas fotos da mesma cena, com diferentes exposições a luz. A foto com pouca entrada de luz, e portanto a com menos ruido, é a foto utilizada para aplicação dos filtros. As outras fotos, com mais detalhes visiveis por conta da maior quantidade de luz, são a amostra de treinamento da inteligencia artificial, que utiliza esses dados para aplicar um filtro de suavisação muito mais eficiente que metodos desenvolvidos anteriormente.
+### Codigo em python: 
 
-### aplicação do filtro na cena exemplo:
+### import matplotlib.pyplot as plt
+### from skimage import data
+### from skimage.filters import threshold_otsu
+
+### image = data.camera()
+### thresh = threshold_otsu(image)
+### binary = image > thresh
+
+### fig, axes = plt.subplots(ncols=3, figsize=(8, 2.5))
+### ax = axes.ravel()
+### ax[0] = plt.subplot(1, 3, 1)
+### ax[1] = plt.subplot(1, 3, 2)
+### ax[2] = plt.subplot(1, 3, 3, sharex=ax[0], sharey=ax[0])
+
+### ax[0].imshow(image, cmap=plt.cm.gray)
+### ax[0].set_title('Original')
+### ax[0].axis('off')
+
+### ax[1].hist(image.ravel(), bins=256)
+### ax[1].set_title('Histogram')
+### ax[1].axvline(thresh, color='r')
+
+### ax[2].imshow(binary, cmap=plt.cm.gray)
+### ax[2].set_title('Thresholded')
+### ax[2].axis('off')
+
+### plt.show()
+
+
+
 
 ![https://i.imgur.com/QTopsHj.png](https://i.imgur.com/QTopsHj.png)
 
