@@ -68,4 +68,28 @@
 
 ![https://i.imgur.com/kKlpsD2.png](https://i.imgur.com/kKlpsD2.png)
 
+## 3. 
+
+### Codigo em python:
+
+#### image = skimage.io.imread(fname="data/plant-seedling.jpg")
+#### fig, ax = plt.subplots()
+#### plt.imshow(image)
+#### colors = ("red", "green", "blue")
+#### channel_ids = (0, 1, 2)
+#### plt.figure()
+#### plt.xlim([0, 256])
+#### for channel_id, c in zip(channel_ids, colors):
+####     histogram, bin_edges = np.histogram(
+####         image[:, :, channel_id], bins=256, range=(0, 256)
+####     )
+####     plt.plot(bin_edges[0:-1], histogram, color=c)
+#### plt.title("Color Histogram")
+#### plt.xlabel("Color value")
+#### plt.ylabel("Pixel count")
+
+### Imagem resultante da execução do codigo:
+
+![https://i.imgur.com/tuiTPiV.jpg](https://i.imgur.com/tuiTPiV.jpg)
+
 
