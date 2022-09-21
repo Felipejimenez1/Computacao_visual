@@ -167,5 +167,14 @@
 ![https://i.imgur.com/sQxgTim.jpg](https://i.imgur.com/sQxgTim.jpg)
 
 
+## Referencias utilizadas:
+
+### https://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html
+### https://datacarpentry.org/image-processing/05-creating-histograms/
+### https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_equalize.html
+### https://exposuretherapy.ca/photography-guide/the-histogram-and-picture-brightness/#:~:text=A%20low%20contrast%20image%20will,narrow%20prominences%20set%20far%20apart.
+### https://www.adorama.com/alc/read-and-use-a-histogram-in-photography/#:~:text=If%20the%20curve%20appears%20to,losing%20details%20in%20the%20highlights.
+
+
 
 
