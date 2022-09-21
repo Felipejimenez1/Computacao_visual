@@ -152,9 +152,9 @@
 
 ## 5. 
 
-### Metodo:
-
 #### Para detectar se uma foto esta subexposta ou superexposta atraves de seu histograma devemos observar se sua curva colide com um dos lados da imagem. Se a curva colidir com lado esquerdo provavelmente a foto esta subexposta e se colide do lado direito superexposta.
+
+###Imagem de um histograma subexposto e superexposto
 
 ![https://i.imgur.com/yYuvGJx.jpg](https://i.imgur.com/yYuvGJx.jpg)
 
@@ -163,6 +163,8 @@
 ### Metodo:
 
 #### Já em relação ao contraste percebe-se que imagens com pouco contraste tem seu histograma com grande volume de pixels concentrados em uma pequena faixa de tons. Já a imagem com muito contraste normalmente ira ter uma vasta distribuição de tons e predominanmente separado em grupos.
+
+###Imagem de um histograma de uma imagem com pouco e muito contraste
 
 ![https://i.imgur.com/sQxgTim.jpg](https://i.imgur.com/sQxgTim.jpg)
 
