@@ -160,8 +160,6 @@
 
 ## 6. 
 
-### Metodo:
-
 #### Já em relação ao contraste percebe-se que imagens com pouco contraste tem seu histograma com grande volume de pixels concentrados em uma pequena faixa de tons. Já a imagem com muito contraste normalmente ira ter uma vasta distribuição de tons e predominanmente separado em grupos.
 
 ### Imagem de um histograma de uma imagem com pouco e muito contraste:
