@@ -92,4 +92,80 @@
 
 ![https://i.imgur.com/tuiTPiV.jpg](https://i.imgur.com/tuiTPiV.jpg)
 
+## 4. 
+
+### Codigo em python:
+
+#### import matplotlib
+#### import matplotlib.pyplot as plt
+#### import numpy as np
+#### from skimage import data, img_as_float
+#### from skimage import exposure
+#### matplotlib.rcParams['font.size'] = 8
+#### def plot_img_and_hist(image, axes, bins=256):
+####     image = img_as_float(image)
+####     ax_img, ax_hist = axes
+####     ax_cdf = ax_hist.twinx()
+####     # Display image
+####     ax_img.imshow(image, cmap=plt.cm.gray)
+####     ax_img.set_axis_off()
+####     ax_hist.hist(image.ravel(), bins=bins, histtype='step', color='black')
+####     ax_hist.ticklabel_format(axis='y', style='scientific', scilimits=(0, 0))
+####     ax_hist.set_xlabel('Pixel intensity')
+####     ax_hist.set_xlim(0, 1)
+####     ax_hist.set_yticks([])
+####     img_cdf, bins = exposure.cumulative_distribution(image, bins)
+####     ax_cdf.plot(bins, img_cdf, 'r')
+####     ax_cdf.set_yticks([])
+####     return ax_img, ax_hist, ax_cdf
+
+#### img = data.moon()
+#### p2, p98 = np.percentile(img, (2, 98))
+#### img_rescale = exposure.rescale_intensity(img, in_range=(p2, p98))
+#### img_eq = exposure.equalize_hist(img)
+#### fig = plt.figure(figsize=(8, 5))
+#### axes = np.zeros((2, 4), dtype=np.object)
+#### axes[0, 0] = fig.add_subplot(2, 4, 1)
+#### for i in range(1, 4):
+####     axes[0, i] = fig.add_subplot(2, 4, 1+i, sharex=axes[0,0], sharey=axes[0,0])
+#### for i in range(0, 4):
+####     axes[1, i] = fig.add_subplot(2, 4, 5+i)
+#### ax_img, ax_hist, ax_cdf = plot_img_and_hist(img, axes[:, 0])
+#### ax_img.set_title('Low contrast image')
+#### y_min, y_max = ax_hist.get_ylim()
+#### ax_hist.set_ylabel('Number of pixels')
+#### ax_hist.set_yticks(np.linspace(0, y_max, 5))
+#### ax_img, ax_hist, ax_cdf = plot_img_and_hist(img_rescale, axes[:, 1])
+#### ax_img.set_title('Contrast stretching')
+#### ax_img, ax_hist, ax_cdf = plot_img_and_hist(img_eq, axes[:, 2])
+#### ax_img.set_title('Histogram equalization')
+#### ax_img, ax_hist, ax_cdf = plot_img_and_hist(img_adapteq, axes[:, 3])
+#### ax_img.set_title('Adaptive equalization')
+#### ax_cdf.set_ylabel('Fraction of total intensity')
+#### ax_cdf.set_yticks(np.linspace(0, 1, 5))
+#### fig.tight_layout()
+#### plt.show()
+
+### Imagem resultante da execução do codigo:
+
+![https://i.imgur.com/cJqTyjE.png](https://i.imgur.com/cJqTyjE.png)
+
+## 5. 
+
+### Metodo:
+
+#### Para detectar se uma foto esta subexposta ou superexposta atraves de seu histograma devemos observar se sua curva colide com um dos lados da imagem. Se a curva colidir com lado esquerdo provavelmente a foto esta subexposta e se colide do lado direito superexposta.
+
+![https://i.imgur.com/yYuvGJx.jpg](https://i.imgur.com/yYuvGJx.jpg)
+
+## 6. 
+
+### Metodo:
+
+#### Já em relação ao contraste percebe-se que imagens com pouco contraste tem seu histograma com grande volume de pixels concentrados em uma pequena faixa de tons. Já a imagem com muito contraste normalmente ira ter uma vasta distribuição de tons e predominanmente separado em grupos.
+
+![https://i.imgur.com/sQxgTim.jpg](https://i.imgur.com/sQxgTim.jpg)
+
+
+
 
