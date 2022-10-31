@@ -25,8 +25,6 @@
 #### cv2.imshow('Sobel X', sobelx)
 #### cv2.imshow('Sobel Y', sobely)
 #### cv2.imshow('Sobel X Y using Sobel() function', sobelxy)
-#### edges = cv2.Canny(image=img_blur, threshold1=100, threshold2=200) # Canny Edge Detection
-#### cv2.imshow('Canny Edge Detection', edges)
 
 ### Imagens resultantes da execução do codigo:
 
@@ -40,4 +38,4 @@
 ![(https://i.imgur.com/ihoTh2j.jpg)](https://i.imgur.com/ihoTh2j.jpg)
 
 #### Imagem após encontrar a magnitude do gradiente
-![(https://i.imgur.com/VkjIQuW.png)](https://i.imgur.com/VkjIQuW.png)
+![(https://i.imgur.com/9x6AHZQ.jpg)](https://i.imgur.com/9x6AHZQ.jpg)
