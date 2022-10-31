@@ -55,6 +55,39 @@
 ![(https://i.imgur.com/HkQBlXv.png)](https://i.imgur.com/HkQBlXv.png)
 
  --------------------
+ 
+## Operadores de Priwit
+
+### Codigo em python:
+
+#### import cv2
+#### import numpy as np
+#### img = cv2.imread('messi5.jpg')
+#### gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#### img_gaussian = cv2.GaussianBlur(gray,(3,3),0)
+#### kernelx = np.array([[1,1,1],[0,0,0],[-1,-1,-1]])
+#### kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
+#### img_prewittx = cv2.filter2D(img_gaussian, -1, kernelx)
+#### img_prewitty = cv2.filter2D(img_gaussian, -1, kernely)
+#### cv2.imshow("Prewitt X", img_prewittx)
+#### cv2.imshow("Prewitt Y", img_prewitty)
+#### cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+
+### Imagens resultantes da execução do codigo:
+
+#### Imagem original
+![(https://i.imgur.com/Sd5QIs9.jpg)](https://i.imgur.com/Sd5QIs9.jpg)
+
+#### Imagem com operação horizontal
+![https://i.imgur.com/zidR1kc.png](https://i.imgur.com/zidR1kc.png)
+
+#### Imagem com operação vertical
+![(https://i.imgur.com/pu1LFfX.png)](https://i.imgur.com/pu1LFfX.png)
+
+#### Imagem após encontrar a magnitude do gradiente
+![(https://i.imgur.com/HkQBlXv.png)](https://i.imgur.com/HkQBlXv.png)
+
+ --------------------
 ## Operadores de Sobel
 
 ### Codigo em python:
