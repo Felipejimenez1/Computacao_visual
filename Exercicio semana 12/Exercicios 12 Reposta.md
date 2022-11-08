@@ -13,7 +13,10 @@
 ### Diagrama do pipeline da API:
 ![(https://www.khronos.org/opengl/wiki_opengl/images/RenderingPipeline.png)](https://www.khronos.org/opengl/wiki_opengl/images/RenderingPipeline.png)
 
-
-### Exemplos de codigo:
-
-![(https://i.imgur.com/Sd5QIs9.jpg)](https://i.imgur.com/Sd5QIs9.jpg)
+### Codigo para renderizar um triangulo:
+#### glBegin(GL_TRIANGLES);
+#### glColor3f(0.1, 0.2, 0.3);
+#### glVertex3f(0, 0, 0);
+#### glVertex3f(1, 0, 0);
+#### glVertex3f(0, 1, 0);
+#### glEnd();
