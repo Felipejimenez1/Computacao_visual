@@ -8,7 +8,7 @@
 
 ## OpenGL
 
-#### A api grafica OpenGL foi criada pela Silicon Graphics e hoje é gerida pela organização Khonos Group e se tornou uma das mais utilizadas apis do mercado. Ela consiste em uma API multiplataforma para rederização de graficos 2D e 3D, alem da interação com GPUS e compatibilidade com diversos sistemas operacionais. Os shadders utilizados no OpenGL são o Vertex shader, Geometry Shader e Tessellation. Um dos principais usos essa API é na portabilidade de jogos desenvolvidos em windows para serem jogados no SteamOS, sistema baseado em linux.
+#### A api grafica OpenGL foi criada pela Silicon Graphics e hoje é gerida pela organização Khonos Group e se tornou uma das mais utilizadas apis do mercado. Ela consiste em uma API multiplataforma para rederização de graficos 2D e 3D, alem da interação com GPUS e compatibilidade com diversos sistemas operacionais. A linguagem de shading utilizada na API é a GLSL. Um dos principais usos essa API é na portabilidade de jogos desenvolvidos em windows para serem jogados no SteamOS, sistema baseado em linux.
 
 ### Diagrama do pipeline da API:
 ![(https://www.khronos.org/opengl/wiki_opengl/images/RenderingPipeline.png)](https://www.khronos.org/opengl/wiki_opengl/images/RenderingPipeline.png)
@@ -20,3 +20,12 @@
 #### glVertex3f(1, 0, 0);
 #### glVertex3f(0, 1, 0);
 #### glEnd();
+
+### Codigo para implementação do Vertex Shadder na linguagem GLSL:
+#### layout (location = 0) in vec3 aPos; 
+#### out vec4 vertexColor;
+#### void main()
+#### {
+####     gl_Position = vec4(aPos, 1.0); 
+####     vertexColor = vec4(0.5, 0.0, 0.0, 1.0);
+#### }
