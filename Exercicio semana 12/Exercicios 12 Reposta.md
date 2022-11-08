@@ -1,5 +1,5 @@
 
-# *Exercicio Semana 11*
+# *Exercicio Semana 12*
 
 ## *Exercicio:* Faça uma pesquisa sobre APIs gráficas e elabore um resumo sobre seus achados. Para cada API gráfica (descreva pelo menos duas), inclua como a pipeline é documentada pelos desenvolvedores da API e quais linguagens de shading (shaders) são suportadas por cada API.
 
